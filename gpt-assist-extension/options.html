@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GPT-Assist Options</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1 {
+        margin-top: 0;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      input {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+        margin-top: 5px;
+        padding: 5px;
+        width: 100%;
+      }
+
+      button {
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>GPT-Assist Options</h1>
+    <form id="optionsForm">
+      <label for="openaiToken">OpenAI API Token:</label>
+      <input type="text" id="openaiToken" name="openaiToken" />
+      <br />
+      <label for="prompt">Prompt:</label>
+      <input type="text" id="prompt" name="prompt" />
+      <br />
+      <button type="submit">Save</button>
+    </form>
+    <script src="options.js"></script>
+  </body>
+</html>
